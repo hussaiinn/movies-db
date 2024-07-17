@@ -41,6 +41,7 @@ const MovieCard = ({ movie }) => {
   return (
     <div className="movie-card" style={cardStyle}>
       {/* <img src={movie.image} alt={movie.movie} style={imageStyle} /> */}
+      {/* <img src={movie.image} alt={movie.movie + ' poster'} style={imageStyle} onError={(e) => { e.target.src = 'fallback-image.jpg'; }} /> */}
       <h2 style={titleStyle}>{movie.movie}</h2>
       <p style={ratingStyle}>Rating: {movie.rating}</p>
       <a href={movie.imdb_url} target="_blank" rel="noopener noreferrer" style={linkStyle}>
